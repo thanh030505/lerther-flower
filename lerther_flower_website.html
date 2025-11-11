@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ler Ther – Flower Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      color: #333;
+      background-color: #fafafa;
+    }
+    header {
+      background: url('hero-image.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      background-color: rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    header a {
+      background: #a3c9a8;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    header a:hover {
+      background: #89b38c;
+    }
+    section {
+      padding: 4rem 10%;
+    }
+    .title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #5b705a;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 1rem 0 0.5rem;
+      font-family: 'Playfair Display', serif;
+    }
+    footer {
+      background: #f0f6f2;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .cta {
+      background: #e3f2ec;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-radius: 2rem;
+      margin-top: 3rem;
+    }
+    .cta h2 {
+      font-family: 'Playfair Display', serif;
+      color: #507255;
+    }
+    .cta a {
+      display: inline-block;
+      background: #a3c9a8;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+    .services, .contact, .socials, .order-form {
+      text-align: center;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      margin: 0.8rem 0;
+      font-size: 1.1rem;
+    }
+    .contact p, .socials p {
+      margin: 0.5rem 0;
+    }
+    .socials a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #5b705a;
+      font-weight: 600;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: 'Quicksand', sans-serif;
+    }
+    button {
+      background: #a3c9a8;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #89b38c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ler Ther – Flower Studio</h1>
+    <p>Cảm hứng từ từng cánh hoa</p>
+    <a href="#collection">Khám phá bộ sưu tập</a>
+  </header>
+
+  <section id="about">
+    <h2 class="title">Về Ler Ther</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      Ler Ther là studio hoa tại Hà Nội, nơi những người yêu hoa cùng tạo nên các thiết kế độc bản, tinh tế và mang cảm xúc riêng. Mỗi bó hoa là một lời kể – về yêu thương, trân trọng và sự lãng mạn trong từng khoảnh khắc.
+    </p>
+  </section>
+
+  <section class="services">
+    <h2 class="title">Dịch vụ của Ler Ther</h2>
+    <ul>
+      <li>🌷 Thiết kế bó hoa & giỏ hoa theo yêu cầu</li>
+      <li>🌿 Trang trí sự kiện – tiệc cưới – studio chụp ảnh</li>
+      <li>💌 Giao hoa tận nơi theo khung giờ yêu thương</li>
+      <li>🎁 Gói quà & hoa nghệ thuật cho thương hiệu cá nhân</li>
+    </ul>
+  </section>
+
+  <section id="collection">
+    <h2 class="title">Bộ sưu tập nổi bật</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="flower1.jpg" alt="Morning Mist">
+        <h3>Morning Mist</h3>
+        <p>Hồng trắng & lá bạc nhẹ nhàng</p>
+      </div>
+      <div class="card">
+        <img src="flower2.jpg" alt="Urban Garden">
+        <h3>Urban Garden</h3>
+        <p>Mix hoa bản địa & xanh lá rực rỡ</p>
+      </div>
+      <div class="card">
+        <img src="flower3.jpg" alt="Evening Glow">
+        <h3>Evening Glow</h3>
+        <p>Hồng đậm & ánh nắng hoàng hôn</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Thiết kế riêng – Gửi trao yêu thương</h2>
+    <p>Hãy nói với Ler Ther cảm xúc bạn muốn gửi gắm, chúng tôi sẽ tạo nên bó hoa độc bản dành riêng cho bạn.</p>
+    <a href="#order">Đặt hoa ngay</a>
+  </section>
+
+  <section id="order" class="order-form">
+    <h2 class="title">Đặt hoa online</h2>
+    <form>
+      <input type="text" placeholder="Họ và tên" required>
+      <input type="tel" placeholder="Số điện thoại" required>
+      <input type="email" placeholder="Email (tuỳ chọn)">
+      <select required>
+        <option value="">Chọn loại hoa</option>
+        <option>Bó hoa sinh nhật</option>
+        <option>Hoa cảm ơn</option>
+        <option>Hoa cưới</option>
+        <option>Thiết kế theo yêu cầu</option>
+      </select>
+      <textarea rows="4" placeholder="Lời nhắn hoặc yêu cầu đặc biệt..."></textarea>
+      <button type="submit">Gửi yêu cầu</button>
+    </form>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="title">Liên hệ với Ler Ther</h2>
+    <p>📍 Địa chỉ: Hà Nội, Việt Nam</p>
+    <p>📞 Điện thoại: 0987 654 321</p>
+    <p>✉️ Email: hello@lerther.vn</p>
+    <p>🕓 Giờ làm việc: 9:00 – 21:00 mỗi ngày</p>
+  </section>
+
+  <section class="socials">
+    <h2 class="title">Kết nối cùng Ler Ther</h2>
+    <p>Theo dõi chúng tôi để cảm nhận nhiều hơn về những cánh hoa.</p>
+    <p>
+      <a href="#">Instagram</a> · 
+      <a href="#">Facebook</a> · 
+      <a href="#">Pinterest</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Ler Ther Flower Studio | Hà Nội | hello@lerther.vn</p>
+  </footer>
+</body>
+</html>
